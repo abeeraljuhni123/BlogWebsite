@@ -1,0 +1,21 @@
+{% extends "master.html" %}
+
+{% block title %}
+BlogWebsite - Home
+{% endblock %}
+
+{% block content %}
+
+<h1>Welcome to BlogWebsite</h1>
+<p>Welcome to our simple Django blog!</p>
+
+<h2>Explore Our Website</h2>
+
+<ul>
+    <li><a href="{% url 'users' %}">Users</a></li>
+    <li><a href="{% url 'blogs' %}">Blogs</a></li>
+    <li><a href="{% url 'comments' %}">Comments</a></li>
+    <li><a href="{% url 'categories' %}">Categories</a></li>
+</ul>
+
+{% endblock %}

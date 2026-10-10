@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+
+{% block title %}
+BlogWebsite - Blog Details
+{% endblock %}
+
+{% block content %}
+
+<h1>{{ mypost.title }}</h1>
+
+<p>{{ mypost.content }}</p>
+
+<p>Category: {{ mypost.category.name }}</p>
+
+<p>Date Published: {{ mypost.date_published }}</p>
+
+<p><a href="/blogs/">Back to Blogs</a></p>
+
+{% endblock %}
